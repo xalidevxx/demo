@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'components.scss';
+@use 'mixins.scss';
+@use 'normalize.scss';
+@use 'typography.scss';
+@use 'utils.scss';
+@use 'var.scss';

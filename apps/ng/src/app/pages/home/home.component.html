@@ -1,0 +1,17 @@
+@if (loader()) {
+<mat-spinner />
+} @else {
+<h1>Found {{ posts().length }} posts</h1>
+<div class="posts">
+	@for (p of posts(); track p.id) {
+	<div class="post">
+		<div class="post__title">
+			{{ p.title }}
+		</div>
+		<div class="post__body">
+			{{ p.body }}
+		</div>
+	</div>
+	}
+</div>
+}

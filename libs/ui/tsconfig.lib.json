@@ -1,0 +1,26 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"outDir": "../../dist/out-tsc",
+		"declaration": true,
+		"declarationMap": true,
+		"inlineSources": true,
+		"types": []
+	},
+	"exclude": ["src/**/*.spec.ts", "src/test-setup.ts", "jest.config.ts", "src/**/*.test.ts"],
+	"include": [
+		"src/**/*.ts",
+		"../interfaces/src/button-spinner.interface.ts",
+		"../interfaces/src/button-toggle.interface.ts",
+		"../interfaces/src/more-actions.interface.ts",
+		"../interfaces/src/sort.interface.ts",
+		"../interfaces/src/vacancy-card.interface.ts",
+		"../interfaces/src/password-change.interface.ts",
+		"../interfaces/src/action-panel.interface.ts",
+		"../interfaces/src/search-dialog.interface.ts",
+		"../interfaces/src/write-review.interface.ts",
+		"../interfaces/src/create-task.interface.ts",
+		"../interfaces/src/change-email.interface.ts",
+		"../interfaces/src/task-button.interface.ts"
+	]
+}

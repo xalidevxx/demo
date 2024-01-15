@@ -1,0 +1,113 @@
+.spacer {
+	flex: 1;
+}
+
+.container {
+	width: 100%;
+	max-width: var(--container);
+	padding-right: 16px;
+	padding-left: 16px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.shadow {
+	box-shadow: var(--shadow) !important;
+}
+
+.hover-shadow,
+.selectable {
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.hover-shadow:hover {
+	box-shadow: var(--shadow);
+}
+
+.selectable:hover {
+	background-color: var(--tint-18) !important;
+}
+
+.selected {
+	background-color: var(--tint-25) !important;
+
+	* {
+		color: var(--tint-13) !important;
+	}
+}
+
+.scroll {
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+	&-inner {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		overflow-x: hidden;
+		overflow-y: overlay;
+	}
+}
+
+.d__none {
+	display: none !important;
+}
+
+.found {
+	color: var(--tint-15);
+	animation: scale 100ms;
+}
+
+.backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 10005;
+}
+
+.text__hidden {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.not__selectable {
+	pointer-events: none !important;
+	touch-action: none !important;
+}
+
+.grid-view {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(170px, 240px));
+	grid-column-gap: 18px;
+	grid-row-gap: 24px;
+	justify-content: space-between;
+}
+
+.list-view {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+@media only screen and (max-width: 510px) {
+	.grid-view {
+		grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+		grid-column-gap: 8px;
+	}
+}
+
+.link {
+	color: var(--tint-13) !important;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

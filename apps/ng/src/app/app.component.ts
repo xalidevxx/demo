@@ -1,14 +1,12 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { Component } from '@angular/core'
+import { RouterOutlet } from '@angular/router'
 
 @Component({
-  standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
-  selector: 'demo-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+	selector: 'd-root',
+	standalone: true,
+	template: `<router-outlet />`,
+	imports: [RouterOutlet],
 })
 export class AppComponent {
-  title = 'ng';
+	title = 'ng'
 }
