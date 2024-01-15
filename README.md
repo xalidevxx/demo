@@ -1,4 +1,8 @@
-# This is demo project for demonstrate my skills. Project was written in Nx, React, Angular, Vue, Nestjs. Used FCD and Atomic architecture, micro frontend.
+### This is demo project for demonstrate my skills.
+
+### In my spare time, I will support the project.
+
+### Project was written in Nx, React, Angular, Vue, Nestjs. Used FCD and Atomic architecture, micro frontend.
 
 <br/><br/>
 
@@ -11,7 +15,7 @@
 <br/>
 
 <a href="https://nodejs.org/en" style="padding: 16px 24px; background-color: green; color: white; border-radius: 20px; font-size: 14px; font-weight: 500; letter-spacing: 1px">
-	GITHUB
+	NODEJS
 </a>
 
 <br/>
